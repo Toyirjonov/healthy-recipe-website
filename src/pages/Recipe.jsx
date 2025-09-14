@@ -83,18 +83,33 @@ function Recipe() {
           <div className="item__detail">
             <div className="item__details-r">
               <div className="item__details-textt">
-                <img src="/images/icon-servings.svg" alt="" />
+                <img
+                  src="/images/icon-servings.svg"
+                  alt=""
+                  width={20}
+                  height={20}
+                />
                 <span>Servings: {recipe.servings}</span>
               </div>
               <div className="item__details-textt">
-                <img src="/images/icon-prep-time.svg" alt="" />
+                <img
+                  src="/images/icon-prep-time.svg"
+                  alt=""
+                  width={20}
+                  height={20}
+                />
                 <span>Prep: {recipe.prepMinutes} mins</span>
               </div>
             </div>
 
             <div className="item__details-r">
               <div className="item__details-textt">
-                <img src="/images/icon-cook-time.svg" alt="" />
+                <img
+                  src="/images/icon-cook-time.svg"
+                  alt=""
+                  width={20}
+                  height={20}
+                />
                 <span>Cook: {recipe.cookMinutes} min</span>
               </div>
             </div>
@@ -102,7 +117,7 @@ function Recipe() {
 
           {recipe.ingredients && recipe.ingredients.length > 0 && (
             <div className="recipe-section">
-              <h2 className="recipe-section-title">Ingredients</h2>
+              <h2 className="recipe-section-title">Ingredients:</h2>
               <ul className="ingredients-list">
                 {recipe.ingredients.map((ingredient, index) => (
                   <li key={index}>
@@ -120,7 +135,7 @@ function Recipe() {
 
           {recipe.instructions && recipe.instructions.length > 0 && (
             <div className="recipe-section">
-              <h2 className="recipe-section-title">Instructions</h2>
+              <h2 className="recipe-section-title">Instructions:</h2>
               <ol className="instructions-list">
                 {recipe.instructions.map((instruction, index) => (
                   <li key={index}>
@@ -164,18 +179,33 @@ function Recipe() {
                     <div className="item__details">
                       <div className="item__details-l">
                         <div className="item__details-text">
-                          <img src="/images/icon-servings.svg" alt="" />
+                          <img
+                            src="/images/icon-servings.svg"
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
                           <span>Servings: {otherRecipe.servings}</span>
                         </div>
                         <div className="item__details-text">
-                          <img src="/images/icon-prep-time.svg" alt="" />
+                          <img
+                            src="/images/icon-prep-time.svg"
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
                           <span>Prep: {otherRecipe.prepMinutes} mins</span>
                         </div>
                       </div>
 
                       <div className="item__details-l">
                         <div className="item__details-text">
-                          <img src="/images/icon-cook-time.svg" alt="" />
+                          <img
+                            src="/images/icon-cook-time.svg"
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
                           <span>Cook: {otherRecipe.cookMinutes} min</span>
                         </div>
                       </div>

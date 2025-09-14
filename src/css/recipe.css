@@ -99,6 +99,7 @@
 
 .ingredients-list li,
 .instructions-list li {
+  align-items: flex-start;
   display: flex;
   gap: 0.8rem;
   margin-bottom: 0.8rem;
@@ -115,10 +116,6 @@
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-loose);
   letter-spacing: var(--letter-spacing-wide);
-}
-
-.instructions-list li img:first-child {
-  margin-bottom: 2rem;
 }
 
 .recipe-border {
@@ -164,6 +161,7 @@
 }
 
 .item__details-textt {
+  align-items: center;
   display: flex;
   gap: 0.8rem;
 }
@@ -223,7 +221,7 @@
   }
 
   .recipe-details {
-    max-width: 343px;
+    max-width: 346px;
   }
 
   .item__details-r {

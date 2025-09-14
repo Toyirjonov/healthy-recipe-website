@@ -7,8 +7,7 @@ export const Item = ({ recipe }) => {
     <div className="item">
       <div className="item__image">
         <picture>
-          <source srcSet={recipe.image.large} media="(min-width: 1024px)" />
-          <img src={recipe.image.small} alt={recipe.title} />
+          <img src={recipe.image.large} alt={recipe.title} />
         </picture>
       </div>
       <div className="item__content">
