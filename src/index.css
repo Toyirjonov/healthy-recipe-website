@@ -1,0 +1,58 @@
+@import "./css/buttons.css";
+@import "./css/font.css";
+@import "./css/variable.css";
+@import "./css/navbar.css";
+@import "./css/search.css";
+@import "./css/herodesc.css";
+@import "./css/footer.css";
+@import "./css/about.css";
+@import "./css/recipes.css";
+@import "./css/item.css";
+@import "./css/recipe.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  height: 100%;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-preset-6);
+  line-height: var(--line-height-loose);
+  background-color: var(--color-neutral-100);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
