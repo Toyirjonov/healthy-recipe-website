@@ -1,4 +1,4 @@
-import { About, Home, Recipe, Recipes } from "./pages";
+import { About, Home, Recipe, Recipes, Create } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 
@@ -23,6 +23,10 @@ function App() {
         {
           path: "recipe/:id",
           element: <Recipe />,
+        },
+        {
+          path: "/create",
+          element: <Create />,
         },
       ],
     },

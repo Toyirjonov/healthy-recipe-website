@@ -7,14 +7,15 @@ function useDatabase(url = "") {
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState(null);
 
-  const postData = async (data, endpoint) => {
+  const postData = async (payload) => {
+    setIsPending(true);
     try {
-      setIsPending(true);
-      setError(null);
-      const res = await axiosInstance.post(endpoint, data);
-      setData(res.data);
-    } catch (error) {
-      setError(error.message);
+      const req = await axiosInstance.post(url, payload);
+      setData((prev) =>
+        Array.isArray(prev) ? [...prev, req.data] : [req.data]
+      );
+    } catch (err) {
+      setError(err.message);
     } finally {
       setIsPending(false);
     }

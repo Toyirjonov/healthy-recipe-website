@@ -30,6 +30,10 @@ function Navbar() {
             <NavLink to="/recipes">Recipes</NavLink>
             <span className="line"></span>
           </li>
+          <li className="nav__list-item">
+            <NavLink to="/create">Create</NavLink>
+            <span className="line"></span>
+          </li>
           {isOpen && (
             <li className="nav__list-item nav-btn-item">
               <Link to="/recipes" className="nav-btn btn">
