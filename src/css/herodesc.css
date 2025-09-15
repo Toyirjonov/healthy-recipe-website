@@ -8,12 +8,12 @@
   z-index: 0;
 }
 
-.home__desc::before {
+.home__desc-bg-img {
   content: "";
   position: absolute;
-  bottom: -450px;
-  right: 1px;
-  width: 1546px;
+  bottom: -350px;
+  right: 0;
+  width: 100%;
   height: 1264px;
   background-image: url("/images/pattern-squiggle-1.svg");
   background-repeat: no-repeat;
@@ -75,8 +75,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
-  padding-right: 15.4rem;
-  padding-left: 15.4rem;
   padding-top: 4.8rem;
   border-bottom: 1px solid var(--color-neutral-300);
 }
@@ -117,8 +115,6 @@
 .home__built {
   margin-top: 9.6rem;
   display: flex;
-  padding-right: 15.4rem;
-  padding-left: 15.4rem;
   gap: 5.5rem;
   margin-bottom: 9.6rem;
 }
@@ -147,18 +143,28 @@
 }
 
 .home__built-subtitle-bg {
+  position: relative;
   color: var(--color-neutral-800);
   font-family: var(--font-primary);
   font-size: var(--font-size-preset-5);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-relaxed);
   letter-spacing: var(--letter-spacing-normal);
-  background-image: url("/images/orange-bg.svg");
-  background-size: cover;
-  background-position: center;
   display: inline-block;
   padding: 0 0.4rem;
   border-radius: 3px;
+}
+
+.bg-img {
+  position: absolute;
+  background-color: var(--color-orange-500);
+  width: 102px;
+  height: 12px;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  border-radius: 3px;
+  z-index: -1;
 }
 .home__built-image img {
   border-radius: 16px;
@@ -173,7 +179,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 1rem 15rem;
   width: 100%;
   max-width: 1230px;
   overflow: hidden;
@@ -226,6 +231,18 @@
 }
 
 @media (max-width: 850px) {
+  .home__desc-bg-img {
+    content: "";
+    position: absolute;
+    bottom: -800px;
+    right: -50px;
+    width: 885px;
+    height: 1264px;
+    background-image: url("/images/pattern-squiggle-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
   .home__desc {
     padding-top: 4.8rem;
     width: 100%;
@@ -247,15 +264,6 @@
     margin-right: auto;
   }
 
-  .home__desc::before {
-    content: "";
-    position: absolute;
-    bottom: -270px;
-    right: 1px;
-    width: 885px;
-    height: 723px;
-  }
-
   /* Home-get */
   .home__get {
     margin-top: 8rem;
@@ -275,7 +283,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 0;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
     padding-bottom: 8rem;
   }
   .home__get-item-title {
@@ -363,6 +372,19 @@
 }
 
 @media (max-width: 450px) {
+  .home__desc-bg-img {
+    content: "";
+    position: absolute;
+    bottom: -800px;
+    right: 0;
+    width: 885px;
+    height: 1264px;
+    background-image: url("/images/pattern-squiggle-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    transform: rotate(10.176deg);
+  }
   .home__desc {
     padding-top: 4.8rem;
     width: 100%;
@@ -378,16 +400,7 @@
 
   .home__desc-subtitle {
     margin-bottom: 2.4rem;
-  }
-
-  .home__desc::before {
-    content: "";
-    position: absolute;
-    bottom: -197px;
-    left: -227px;
-    width: 634px;
-    height: 518px;
-    transform: rotate(1deg);
+    max-width: 343px;
   }
 
   /* home-get */

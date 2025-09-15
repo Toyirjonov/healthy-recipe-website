@@ -5,6 +5,7 @@ function HeroDesc() {
   return (
     <>
       <section className="home__desc">
+        <div className="home__desc-bg-img"></div>
         <h1 className="home__desc-title">
           <span className="highlight">Healthy</span> meals, zero fuss
         </h1>
@@ -35,7 +36,7 @@ function HeroDesc() {
       </section>
       <section className="home__get">
         <h2 className="home__get-title">What you’ll get</h2>
-        <div className="home__get-list">
+        <div className="home__get-list container">
           <div className="home__get-item">
             <img
               className="home__get-item-image"
@@ -72,13 +73,15 @@ function HeroDesc() {
           </div>
         </div>
       </section>
-      <section className="home__built">
+      <section className="home__built container">
         <div className="home__built-info">
           <h2 className="home__built-title">Built f or real life</h2>
           <p className="home__built-subtitle">
             Cooking shouldn’t be complicated. These recipes come in under{" "}
-            <span className="home__built-subtitle-bg">30 minutes</span> of
-            active time, fit busy schedules, and taste good enough to repeat.
+            <span className="home__built-subtitle-bg">
+              30 minutes <span className="bg-img"></span>
+            </span>{" "}
+            of active time, fit busy schedules, and taste good enough to repeat.
           </p>
           <p className="home__built-subtitle">
             Whether you’re new to the kitchen or just need fresh ideas, we’ve

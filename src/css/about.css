@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   gap: 6.4rem;
-  margin-left: 12.4rem;
-  margin-right: 12.4rem;
+  /* margin-left: 12.4rem;
+  margin-right: 12.4rem; */
 }
 
 .about__mission-info {
@@ -64,8 +64,8 @@
   position: absolute;
   width: 190px;
   height: 270px;
-  right: 90px;
-  bottom: -20px;
+  right: 280px;
+  bottom: 170px;
   background-image: url("/images/pattern-squiggle-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -85,8 +85,6 @@
   display: flex;
   justify-content: space-between;
   gap: 6.4rem;
-  margin-left: 12.4rem;
-  margin-right: 12.4rem;
 }
 
 .about__why-exist-title {
@@ -143,8 +141,6 @@
   display: flex;
   justify-content: space-between;
   gap: 6.4rem;
-  margin-left: 12.4rem;
-  margin-right: 12.4rem;
   margin-bottom: 9.6rem;
 }
 
@@ -179,7 +175,7 @@
   list-style: disc;
   padding-left: 1.6rem;
   width: 100%;
-  max-width: 376px;
+  max-width: 365px;
 }
 
 .about__beyond-text-item {

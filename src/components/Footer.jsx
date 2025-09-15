@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer container">
       <h1 className="footer-title">Made with ❤️ and 🥑</h1>
       <div className="footer-links">
         <a href="">

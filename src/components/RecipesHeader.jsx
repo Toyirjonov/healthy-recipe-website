@@ -22,12 +22,14 @@ function RecipesHeader() {
     { value: "20", label: "20 minutes" },
   ];
   return (
-    <section className="recipes">
+    <section className="recipes container">
       <div className="recipes__text">
-        <h1 className="recipes__title">Simple, tasty recipes</h1>
+        <h1 className="recipes__title">Explore our simple, healthy recipes</h1>
         <p className="recipes__subtitle">
-          Find the perfect recipe for any occasion with our collection of
-          delicious, easy-to-make dishes that will satisfy your taste buds.
+          Discover eight quick, whole-food dishes that fit real-life schedules
+          and taste amazing. Use the search bar to find a recipe by name or
+          ingredient, or simply scroll the list and let something delicious
+          catch your eye.
         </p>
       </div>
 
@@ -35,13 +37,13 @@ function RecipesHeader() {
         <div className="recipes__btns-time">
           <SelectButton
             options={prepOptions}
-            title="Prep Time"
+            title="Max Prep Time"
             selected={selectedPrep}
             setSelected={setSelectedPrep}
           />
           <SelectButton
             options={cookOptions}
-            title="Cook Time"
+            title="Max Cook Time"
             selected={selectedCook}
             setSelected={setSelectedCook}
           />

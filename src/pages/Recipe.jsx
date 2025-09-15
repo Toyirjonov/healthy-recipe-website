@@ -62,7 +62,7 @@ function Recipe() {
   const otherRecipes = data.filter((r) => r.id !== id).slice(0, 3);
 
   return (
-    <div className="recipe-page">
+    <div className="recipe-page container">
       <nav className="breadcrumb">
         <Link to="/recipes" className="title">
           Recipes

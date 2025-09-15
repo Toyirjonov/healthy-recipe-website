@@ -39,10 +39,10 @@ function AboutComp() {
       </section>
       <div class="about__mission-border"></div>
 
-      <section className="about__why-exist">
+      <section className="about__why-exist container">
         <h2 className="about__why-exist-title">Why we exist</h2>
 
-        <div className="about__why-exist-list">
+        <div className="about__why-exist-list ">
           <div className="about__why-exist-item">
             <div className="about__why-exist-content">
               <div className="about__why-exist-content-img">
@@ -111,7 +111,7 @@ function AboutComp() {
       <div class="about__mission-border"></div>
 
       {/* philosophy */}
-      <section className="about__why-exist">
+      <section className="about__why-exist container">
         <h2 className="about__why-exist-title">Our food philosophy</h2>
 
         <div className="about__why-exist-list">
@@ -198,7 +198,7 @@ function AboutComp() {
       </section>
       <div class="about__mission-border"></div>
 
-      <section className="about__beyond">
+      <section className="about__beyond container">
         <div className="about__beyond-text">
           <h2 className="about__beyond-text-title">Beyond the plate</h2>
           <p className="about__beyond-text-subtitle">

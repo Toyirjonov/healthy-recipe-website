@@ -1,7 +1,5 @@
 .recipe-page {
   margin-top: 4.8rem;
-  margin-left: 12.4rem;
-  margin-right: 12.4rem;
 }
 
 .breadcrumb {
@@ -40,7 +38,7 @@
 
 .recipe-details {
   width: 100%;
-  max-width: 572px;
+  max-width: 704px;
 }
 
 .recipe-title {
@@ -172,8 +170,8 @@
 
 @media (max-width: 850px) {
   .recipe-page {
-    margin-right: 6.2rem;
-    margin-left: 6.2rem;
+    padding-right: 6.2rem;
+    padding-left: 6.2rem;
   }
 
   .recipe-content {
@@ -212,8 +210,8 @@
 
 @media (max-width: 450px) {
   .recipe-page {
-    margin-right: 3.2rem;
-    margin-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
   }
   .recipe-image img {
     width: 343px;

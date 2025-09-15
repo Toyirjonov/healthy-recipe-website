@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Cta() {
   return (
-    <>
-      <section class="home__cta">
+    <section className="container">
+      <div class="home__cta">
         <div class="home__cta-content">
           <h2 class="home__cta-title">Ready to cook smarter?</h2>
           <p class="home__cta-subtitle">
@@ -14,8 +14,8 @@ function Cta() {
             Browse recipes
           </Link>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

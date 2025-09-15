@@ -6,7 +6,7 @@
   border-radius: 10px;
   border: 1px solid var(--color-neutral-300);
   width: 100%;
-  max-width: 395px;
+  max-width: 376px;
   padding: 8px;
 }
 .item__image img {
@@ -81,7 +81,7 @@
 .list__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 3.2rem;
 }
 
 .btn-itm {
@@ -113,13 +113,14 @@
   }
 
   .btn-itm {
+    margin-top: 4rem;
     max-width: 688px;
   }
 }
 
 @media (max-width: 450px) {
   .item {
-    max-width: 343px;
+    max-width: 100%;
   }
 
   .item__details {
@@ -129,5 +130,9 @@
 
   .item__details:last-child {
     gap: 0;
+  }
+
+  .btn-item {
+    margin-top: 1.2rem;
   }
 }
