@@ -37,7 +37,7 @@ function AboutComp() {
           </picture>
         </div>
       </section>
-      <div class="about__mission-border"></div>
+      <div className="about__mission-border"></div>
 
       <section className="about__why-exist container">
         <h2 className="about__why-exist-title">Why we exist</h2>
@@ -108,7 +108,7 @@ function AboutComp() {
           </div>
         </div>
       </section>
-      <div class="about__mission-border"></div>
+      <div className="about__mission-border"></div>
 
       {/* philosophy */}
       <section className="about__why-exist container">
@@ -196,7 +196,7 @@ function AboutComp() {
           </div>
         </div>
       </section>
-      <div class="about__mission-border"></div>
+      <div className="about__mission-border"></div>
 
       <section className="about__beyond container">
         <div className="about__beyond-text">
