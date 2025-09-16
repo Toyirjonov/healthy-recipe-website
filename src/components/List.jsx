@@ -9,7 +9,6 @@ export const List = ({ selected, selectedClock, searchText }) => {
     getPost();
   }, []);
 
-  // Показываем состояние загрузки
   if (isPending) {
     return (
       <section className="list">
@@ -30,7 +29,6 @@ export const List = ({ selected, selectedClock, searchText }) => {
     );
   }
 
-  // Показываем ошибку
   if (error) {
     return (
       <section className="list">
@@ -51,7 +49,6 @@ export const List = ({ selected, selectedClock, searchText }) => {
     );
   }
 
-  // Проверяем, что data существует и является массивом
   if (!data || !Array.isArray(data)) {
     return (
       <section className="list">
@@ -76,7 +73,6 @@ export const List = ({ selected, selectedClock, searchText }) => {
 
   if (selected.length > 0 || selectedClock.length > 0 || searchText) {
     filteredData = data.filter((recipe) => {
-      // Фильтр по поиску
       const matchSearch =
         !searchText ||
         (recipe.title &&
@@ -84,19 +80,17 @@ export const List = ({ selected, selectedClock, searchText }) => {
         (recipe.overview &&
           recipe.overview.toLowerCase().includes(searchText.toLowerCase()));
 
-      // Фильтр по времени подготовки
       const matchPrep =
         selected.length === 0 ||
         selected.some((prepTime) => {
-          const prep = prepTime.split("-")[0]; // убираем суффикс, если есть
+          const prep = prepTime.split("-")[0];
           return recipe.prepMinutes === Number(prep);
         });
 
-      // Фильтр по времени готовки
       const matchCook =
         selectedClock.length === 0 ||
         selectedClock.some((cookTime) => {
-          const cook = cookTime.split("-")[0]; // убираем суффикс, если есть
+          const cook = cookTime.split("-")[0];
           return recipe.cookMinutes === Number(cook);
         });
 

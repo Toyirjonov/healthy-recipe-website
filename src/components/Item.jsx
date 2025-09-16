@@ -14,7 +14,6 @@ export const Item = ({ recipe }) => {
         <h3 className="item__title">{recipe.title}</h3>
         <p className="item__overview">{recipe.overview}</p>
         <div className="item__details">
-          {/* Левый блок */}
           <div className="item__details-l">
             <div className="item__details-text">
               <img src="/images/icon-servings.svg" alt="" />
@@ -26,7 +25,6 @@ export const Item = ({ recipe }) => {
             </div>
           </div>
 
-          {/* Правый блок */}
           <div className="item__details-l">
             <div className="item__details-text">
               <img src="/images/icon-cook-time.svg" alt="" />
